@@ -33,12 +33,22 @@ the roster's suggested defaults.
 - Compare before and after states using a discriminating fixture. A pre-existing
   success state, identical upload contents, or an already-reviewed record cannot
   prove that the action caused a change.
+- Trace the boundary under test: direct SDK calls may omit the application's
+  authentication, authorization or request-validation wrapper. State what the
+  harness replaces. A memory adapter does not verify SQL insert constraints or
+  database-generated defaults; test those separately before making persistence
+  claims. A caught exception is a failed or inconclusive check, never a successful
+  return value.
 - For persistence, reload or use a fresh context and verify the same saved record.
   For retries, compare stable identities, contents and counts before and after.
   Do not infer idempotency from one request or a cleared form alone.
 - Keep screenshots, concise DOM/network evidence and scripts inside the assigned
   artifact folder. Stay within screenshot/output/time limits. Exclude credentials,
   cookies and private browser connection capabilities from reports and images.
+- Machine-readable artifact fields contain exact existing paths only. Put event
+  names, line numbers and explanatory parentheses in the observation text, not in
+  `evidencePaths` or `screenshot`. Use the schema's empty/null representation when
+  no screenshot exists, not a prose string such as "none (network only)".
 
 ## Classify observations
 
