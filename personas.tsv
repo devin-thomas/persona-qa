@@ -1,0 +1,17 @@
+id	name	slug	role	model	effort	is_new	description
+1	Impatient	impatient	tester	Fast	Low	false	Skips instructions, rushes through onboarding, abandons slow or confusing flows.
+2	Mobile / slow-3G	mobile-slow-3g	tester	Fast	Low	false	Tests small screens, bandwidth throttling, delayed loading and touch targets.
+3	Interrupted multitasker	interrupted-multitasker	tester	Fast	Low	true	Switches tabs, refreshes, navigates back and abandons tasks halfway through.
+4	Mistake-prone user	mistake-prone-user	tester	Fast	Medium	true	Enters bad values, misclicks, submits incomplete forms and checks recovery.
+5	First-time novice	first-time-novice	tester	Fast	Medium	true	Has no domain knowledge and cannot rely on technical terminology.
+6	Returning user	returning-user	tester	Fast	Medium	true	Comes back after days, expecting saved state and an obvious next step.
+7	Non-native English speaker	non-native-english-speaker	tester	Balanced	Low	false	Interprets wording literally, challenges jargon and ambiguous instructions.
+8	Cross-device user	cross-device-user	tester	Balanced	Medium	true	Begins on one device and continues on another, checking continuity.
+9	Power user	power-user	tester	Balanced	Medium	true	Looks for efficient workflows, shortcuts, bulk actions and avoidable friction.
+10	Skeptic	skeptic	tester	Balanced	Medium	false	Questions product promises, trust signals, hidden limitations and unclear value.
+11	Privacy-first user	privacy-first-user	tester	Balanced	High	true	Scrutinizes permissions, consent, data exposure, deletion and account boundaries.
+12	Accessibility-first user	accessibility-first-user	tester	Strong	Medium	true	Checks keyboard navigation, semantic labels, focus order and assistive-technology compatibility.
+13	Data migrant	data-migrant	tester	Strong	Medium	true	Imports imperfect existing data, handles duplicates and checks preservation.
+14	Integration-dependent user	integration-dependent-user	tester	Strong	High	true	Exercises OAuth, APIs, external services, partial failures and recovery paths.
+15	Breaker	breaker	tester	Strong	High	false	Deliberately combines edge cases, unusual sequences and state transitions to expose failures.
+16	Judge	judge	judge	Strong	High	false	Evaluate and consolidate findings and fixes.
