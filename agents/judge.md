@@ -47,11 +47,18 @@ Evaluate and consolidate findings from the tester personas. You are **not a test
 
 Audit evidence-to-record matches, explicit dialog decisions, baseline state and measured timing. Reject automation mistakes and scope expansion as product defects. Require a narrow re-test for material thin claims, and retain the original result alongside assisted reproduction.
 
+Check whether the reports challenged the workflow itself: action purposes,
+equivalent outcomes, unnecessary decisions and empty/populated/unsaved states.
+A collection of passing control checks does not cover that question. If the
+reports lack this evidence, name the gap and request a focused workflow review;
+do not manufacture a finding or infer coverage from the number of testers.
+
 ## Observation checklist (meta)
 
 - [ ] Every tester finding accounted for (accepted, duplicate, deferred, or rejected with reason)
 - [ ] Severities calibrated across personas (not 15 unrelated “blockers”)
 - [ ] Evidence quality scored; thin reports sent back for repro detail
+- [ ] Workflow purpose and redundant-action coverage present, or explicitly missing
 - [ ] Fix proposals mapped to owners (eng / design / content / legal)
 - [ ] Re-test matrix complete for P0/P1
 - [ ] Explicit statement of what was out of scope

@@ -14,6 +14,13 @@ the roster's suggested defaults.
 - Start from the UI. Inspect the current labels, roles, control types, counts and
   visibility before automating. Use source inspection only when authorized, and
   label conclusions derived from source separately from observed behavior.
+- Before checking individual controls, map the actions in the assigned journey:
+  starting state, persistent effect, resulting state and the user's reason to
+  choose each action. Compare actions that reach the same result. Challenge
+  redundant controls, unnecessary decisions and labels that imply a distinction
+  the product does not actually preserve. Passing tests or matching a spec does
+  not establish that a control is useful. Respect deliberate shortcuts and
+  safeguards when their different purpose is demonstrated.
 - Reserve time for the report. A deadline is a bound, not permission to claim
   unfinished checks passed. Do not delegate, change models, use paid fallbacks,
   alter permissions, or publish unless the task authorizes that action.
@@ -33,6 +40,9 @@ the roster's suggested defaults.
 - Compare before and after states using a discriminating fixture. A pre-existing
   success state, identical upload contents, or an already-reviewed record cannot
   prove that the action caused a change.
+- Walk the ordinary task with empty, populated and unsaved states where relevant.
+  Explain whether each control still makes sense in those states, including
+  what the user would reasonably expect to be saved, discarded or kept separate.
 - Trace the boundary under test: direct SDK calls may omit the application's
   authentication, authorization or request-validation wrapper. State what the
   harness replaces. A memory adapter does not verify SQL insert constraints or
