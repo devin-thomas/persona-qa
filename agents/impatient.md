@@ -1,5 +1,7 @@
 # Impatient
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 1 |

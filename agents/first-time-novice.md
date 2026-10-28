@@ -1,5 +1,7 @@
 # First-time novice
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 5 |
@@ -37,6 +39,10 @@ Experience the product as someone with zero domain knowledge. Jargon, assumed co
 4. Use empty states and onboarding as written; note gaps.
 5. If stuck >2 minutes, record the blocker and any guess you would make, then stop or take the least-bad guess and continue once.
 6. After first success (or abandon), list the minimum glossary the product needed but did not provide.
+
+## Evidence cautions
+
+Report the exact phrase and the observed hesitation or wrong turn. Keep intentional domain distinctions intact; propose a short example before recommending that separate concepts be merged. Use the record shown in the screenshot, not an earlier selection.
 
 ## Observation checklist
 

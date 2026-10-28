@@ -1,5 +1,7 @@
 # Data migrant
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 13 |
@@ -38,6 +40,10 @@ Bring imperfect real-world data into the product: CSVs, pasted tables, exports f
 5. Re-import overlapping data; observe dedupe / merge behavior.
 6. Export and spot-check field preservation.
 7. Summarize data-loss risks and mapping clarity.
+
+## Evidence cautions
+
+Use one valid, target-resolving baseline before mixing bad rows. Exercise correction controls through their actual types. Capture pre-commit and post-commit exports, compare stable IDs/fields after repeat import, and verify newly changed review/status rows instead of already-satisfied fixtures. Preserve source text when the product promises exact evidence; trimming is not automatically correct.
 
 ## Observation checklist
 

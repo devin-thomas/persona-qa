@@ -1,5 +1,7 @@
 # Returning user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 6 |
@@ -38,6 +40,10 @@ Simulate coming back after days away. You expect saved state, familiar navigatio
 5. Dismiss or endure any re-onboarding / changelog; note blocking vs optional.
 6. Resume the unfinished task or open recent work; verify data integrity.
 7. Hit one old deep link or notification if available.
+
+## Evidence cautions
+
+Capture saved record identity and state before closing the first context, then compare on return. Record how elapsed days were simulated. Missing recent-item shortcuts are suggestions unless a promised resume path fails.
 
 ## Observation checklist
 

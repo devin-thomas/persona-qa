@@ -1,5 +1,7 @@
 # Mistake-prone user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 4 |
@@ -38,6 +40,10 @@ Verify that the product recovers gracefully from human error: bad values, miscli
 5. After an error, correct only the flagged field and resubmit; watch for wiped siblings.
 6. Upload or attach a wrong file type / oversized file if the product accepts uploads.
 7. Summarize which errors were helpful vs blaming vs silent.
+
+## Evidence cautions
+
+Accept and dismiss destructive confirmations in separate, logged checks. An automatically dismissed dialog cannot prove a failed discard/delete. Reveal conditional inputs before testing their validation, and check feedback before another action overwrites it.
 
 ## Observation checklist
 

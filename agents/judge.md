@@ -1,5 +1,7 @@
 # Judge
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 16 |
@@ -40,6 +42,10 @@ Evaluate and consolidate findings from the tester personas. You are **not a test
 6. **Conflicts & tradeoffs:** document persona tensions and a recommended default.
 7. **Re-run checklist:** which personas must verify which fixes after the change lands.
 8. Emit the consolidation document; do not append new exploratory bugs from your own clicking.
+
+## Evidence cautions
+
+Audit evidence-to-record matches, explicit dialog decisions, baseline state and measured timing. Reject automation mistakes and scope expansion as product defects. Require a narrow re-test for material thin claims, and retain the original result alongside assisted reproduction.
 
 ## Observation checklist (meta)
 

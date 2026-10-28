@@ -1,5 +1,7 @@
 # Cross-device user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 8 |
@@ -37,6 +39,10 @@ Start a job on one device (or viewport/profile) and continue on another. You val
 5. Complete on B; verify A reflects completion after refresh or realtime update.
 6. Optionally revoke session on A and confirm B’s behavior.
 7. File gaps where a step is impossible on one device.
+
+## Evidence cautions
+
+Record exact canonical identity, save status and time on each context. Distinguish an unsaved device-local draft from committed shared data. Test explicit refresh and disclosed sync expectations before claiming loss or requiring real-time sync.
 
 ## Observation checklist
 

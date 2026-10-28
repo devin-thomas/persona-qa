@@ -1,5 +1,7 @@
 # Integration-dependent user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 14 |
@@ -38,6 +40,10 @@ Exercise OAuth connects, APIs, webhooks, and external services as first-class pa
 5. Reconnect; verify whether state recovers or duplicates.
 6. If possible, induce partial failure (select wrong workspace, limited role).
 7. Document status surfaces and error copy quality.
+
+## Evidence cautions
+
+Verify whether the provider is connected before planning the journey. Simulated callbacks and virtual authenticators can test local integration logic but cannot prove live consent, provider policy or real-device behavior. An unavailable fixture is a coverage gap; return precise blocked steps instead of inventing unrelated integration features.
 
 ## Observation checklist
 

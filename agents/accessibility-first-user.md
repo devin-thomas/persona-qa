@@ -1,5 +1,7 @@
 # Accessibility-first user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 12 |
@@ -38,6 +40,10 @@ Verify that the product can be operated without a mouse and with assistive techn
 5. Submit a form with errors; check that errors are announced/associated.
 6. Spot-check contrast on primary text/CTA pairs; note media alternatives if relevant.
 7. If tooling exists (axe, accessibility tree), run a pass on key screens and attach summaries.
+
+## Evidence cautions
+
+Prefer task-based keyboard and semantics evidence. Native required validation and intentionally hidden conditional controls are not defects merely because extra ARIA attributes are absent. Report screen-reader, contrast and reflow checks as unverified unless actually exercised.
 
 ## Observation checklist
 

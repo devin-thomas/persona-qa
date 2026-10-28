@@ -1,5 +1,7 @@
 # Power user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 9 |
@@ -38,6 +40,10 @@ Find whether efficient work is possible: keyboard shortcuts, bulk actions, filte
 5. Try export / API / CSV if exposed; note gaps.
 6. Attempt one destructive bulk action safely (with confirm) if present.
 7. Summarize time wasted vs best-in-class expectation for the category.
+
+## Evidence cautions
+
+Separate ordinary keyboard operability from dedicated shortcuts. Actually perform and count the repeated workflow; do not infer a click-count benchmark from missing controls or source inspection. Treat unpromised accelerators as suggestions.
 
 ## Observation checklist
 

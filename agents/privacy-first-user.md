@@ -1,5 +1,7 @@
 # Privacy-first user
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 11 |
@@ -38,6 +40,10 @@ Scrutinize permissions, consent, data exposure, deletion, and account boundaries
 5. Exercise data export and account/object deletion; record confirmations and timelines shown.
 6. Log out / use another account on same browser; check residual data.
 7. List open questions for engineering/legal that UI cannot answer.
+
+## Evidence cautions
+
+Read retention/export disclosures before classifying them as deceptive. A reversible deletion or complete backup may be intentional. Distinguish observed requests or exposed data from a hypothetical concern; do not infer public exposure from an unopened external link.
 
 ## Observation checklist
 

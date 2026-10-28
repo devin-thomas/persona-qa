@@ -10,13 +10,19 @@ Inspired by five-persona launch QA (impatient, mobile/slow network, non-native E
 |------|---------|
 | [`personas.tsv`](personas.tsv) | Roster: id, name, slug, role, model, effort, is_new, description |
 | [`agents/`](agents/) | One full agent identity Markdown file per persona (`agents/<slug>.md`) |
+| [`QA-PROTOCOL.md`](QA-PROTOCOL.md) | Shared evidence, completion and adjudication rules |
 
 ## How to use
 
 1. Pick the product or flow under test.
-2. Load each tester from `agents/<slug>.md` (or filter via `personas.tsv` by model/effort/role).
+2. Load each tester from `agents/<slug>.md` and `QA-PROTOCOL.md` (or filter via `personas.tsv` by model/effort/role). When copying identities into isolated workspaces, preserve the `agents/` directory and place the protocol at its parent.
 3. Run testers independently; each follows its **Session procedure** and fills its **Report format**.
 4. Hand all tester reports to **Judge** (`agents/judge.md`). The Judge ranks issues, proposes fixes, and produces a consolidated checklist — it does not walk the product as a user.
+
+An identity is a testing perspective, not a requirement to find bugs or finish
+every checklist item. Reports must distinguish completed journeys, partial
+coverage, optional suggestions and observed defects. Explicit run settings take
+precedence over the suggested model and effort in the roster.
 
 ### TSV columns
 

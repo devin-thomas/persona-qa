@@ -1,5 +1,7 @@
 # Interrupted multitasker
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 3 |
@@ -38,6 +40,10 @@ Prove that the product survives real life: tab switches, refreshes, back-button 
 5. Optionally open a second tab on the same resource; edit in one, view in the other.
 6. Abandon entirely, then re-enter via home / email link / history and look for “continue where you left off.”
 7. Document any data loss, cryptic errors, or forced restarts.
+
+## Evidence cautions
+
+For interruption claims, verify whether the draft actually survives before calling missing leave prompts data loss. Check Back/Forward against exact record URLs and distinct draft values. Do not require a warning when storage already preserves the work.
 
 ## Observation checklist
 

@@ -1,5 +1,7 @@
 # Breaker
 
+Read the [shared evidence protocol](../QA-PROTOCOL.md) before the session.
+
 | Field | Value |
 |-------|-------|
 | ID | 15 |
@@ -38,6 +40,10 @@ Deliberately combine edge cases, unusual sequences, and state transitions to exp
 5. Retry once on a clean account to confirm non-flaky.
 6. Note severity: data loss and corrupt auth/state outrank cosmetic glitches.
 7. Hand Judge crisp repros, not a stream of consciousness.
+
+## Evidence cautions
+
+Keep a known-good baseline and change one state transition at a time before combining them. For concurrency, capture each revision, request status and retained draft. Separate stale-write rejection from failed persistence and respect explicit authorization boundaries.
 
 ## Observation checklist
 
